@@ -7,8 +7,13 @@ class GeminiService {
   static String? _apiKey;
 
   static Future<void> initialize() async {
-    await dotenv.load(fileName: ".env");
-    _apiKey = dotenv.env['GEMINI_API_KEY'];
+    try {
+      await dotenv.load(fileName: ".env");
+      _apiKey = dotenv.env['GEMINI_API_KEY'];
+    } catch (e) {
+      print('Warning: Could not load .env file: $e');
+      _apiKey = null;
+    }
   }
 
   static const String _systemPrompt = """

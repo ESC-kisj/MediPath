@@ -37,13 +37,10 @@ cd MediPath
 flutter pub get
 ```
 
-3. (Optional) Set up OpenAI API integration:
+3. Set up Gemini API key:
 ```bash
-# Copy the environment template
-cp .env.example .env
-
-# Edit .env and add your OpenAI API key
-# OPENAI_API_KEY=your_actual_api_key_here
+# Edit .env and add your Gemini API key
+# GEMINI_API_KEY=your_actual_api_key_here
 ```
 
 4. Run the app:
@@ -67,16 +64,16 @@ lib/
 ├── main.dart           # Entry point and navigation
 ├── home.dart           # Home screen implementation
 ├── quiz.dart           # Quiz functionality with typing and MCQ
-├── chat.dart           # AI-powered chat with OpenAI integration
+├── chat.dart           # AI-powered chat with Gemini integration
 ├── settings.dart       # Settings page with editable fields
 ├── globals.dart        # Global variables and data
-└── openai_service.dart # OpenAI API integration service
+└── gemini_service.dart # Gemini API integration service
 ```
 
 ## Key Features
 
 ### AI-Powered Chat
-- **OpenAI Integration**: Real-time conversations with GPT models
+- **Gemini Integration**: Real-time conversations with Google Gemini models
 - **Language Learning Focus**: Specialized prompts for multicultural language learning
 - **Loading States**: Visual feedback during API calls
 - **Error Handling**: Graceful fallbacks for network issues

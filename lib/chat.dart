@@ -39,7 +39,7 @@ class _ChatPageState extends State<ChatPage> {
     });
     
     try {
-      // Send message to OpenAI API
+      // Send message to Gemini API
       final aiResponse = await GeminiService.sendMessage(userMessage);
       
       setState(() {
