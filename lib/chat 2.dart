@@ -20,7 +20,7 @@ class _ChatPageState extends State<ChatPage> {
     final userMessage = _textController.text.trim();
     
     setState(() {
-      globals.addChatMessage(globals.ChatMessage(
+      globals.chatMessages.add(globals.ChatMessage(
         text: userMessage,
         isUser: true,
       ));
@@ -43,7 +43,7 @@ class _ChatPageState extends State<ChatPage> {
       final aiResponse = await GeminiService.sendMessage(userMessage);
       
       setState(() {
-        globals.addChatMessage(globals.ChatMessage(
+        globals.chatMessages.add(globals.ChatMessage(
           text: aiResponse,
           isUser: false,
         ));
@@ -60,7 +60,7 @@ class _ChatPageState extends State<ChatPage> {
       });
     } catch (e) {
       setState(() {
-        globals.addChatMessage(globals.ChatMessage(
+        globals.chatMessages.add(globals.ChatMessage(
           text: 'Sorry, I encountered an error. Please try again.',
           isUser: false,
         ));
@@ -327,8 +327,6 @@ class _ChatPageState extends State<ChatPage> {
                     ),
                     child: TextField(
                       controller: _textController,
-                      autocorrect: false,
-                      enableSuggestions: false,
                       decoration: const InputDecoration(
                         hintText: 'Type your message...',
                         border: InputBorder.none,

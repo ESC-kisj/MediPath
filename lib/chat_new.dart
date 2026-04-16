@@ -243,6 +243,8 @@ class _ChatPageState extends State<ChatPage> {
                     ),
                     child: TextField(
                       controller: _textController,
+                      autocorrect: false,
+                      enableSuggestions: false,
                       decoration: const InputDecoration(
                         hintText: 'Type your message...',
                         border: InputBorder.none,

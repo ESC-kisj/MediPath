@@ -18,12 +18,6 @@ class ProgressPage extends StatelessWidget {
     final typingCount = history.where((r) => r.quizType == 'typing').length;
     final matchingCount = history.where((r) => r.quizType == 'matching').length;
     final mixedCount = history.where((r) => r.quizType == 'mixed').length;
-    final roleplayCount = history.where((r) => r.quizType == 'roleplay').length;
-
-    // Count quizzes by difficulty level
-    final beginnerCount = history.where((r) => r.level == 1).length;
-    final intermediateCount = history.where((r) => r.level == 2).length;
-    final advancedCount = history.where((r) => r.level == 3).length;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Your Progress')),
@@ -155,22 +149,6 @@ class ProgressPage extends StatelessWidget {
             _buildBreakdownRow('Typing', typingCount, Icons.keyboard, Colors.green),
             _buildBreakdownRow('Matching', matchingCount, Icons.swap_horiz, Colors.orange),
             _buildBreakdownRow('Mixed', mixedCount, Icons.shuffle, Colors.purple),
-            _buildBreakdownRow('Role Play', roleplayCount, Icons.record_voice_over, Colors.teal),
-            const SizedBox(height: 24),
-
-            // Difficulty breakdown
-            const Text(
-              'Difficulty Breakdown',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
-              ),
-            ),
-            const SizedBox(height: 16),
-            _buildBreakdownRow('Beginner', beginnerCount, Icons.school, Colors.green),
-            _buildBreakdownRow('Intermediate', intermediateCount, Icons.trending_up, Colors.orange),
-            _buildBreakdownRow('Advanced', advancedCount, Icons.star, Colors.red),
             const SizedBox(height: 24),
 
             // Recent quizzes
@@ -283,13 +261,7 @@ class ProgressPage extends StatelessWidget {
       'typing': 'Typing',
       'matching': 'Matching',
       'mixed': 'Mixed',
-      'roleplay': 'Role Play',
     }[result.quizType] ?? result.quizType;
-    final levelColor = {
-      1: Colors.green,
-      2: Colors.orange,
-      3: Colors.red,
-    }[result.level] ?? Colors.green;
 
     return Card(
       elevation: 1,
@@ -321,33 +293,12 @@ class ProgressPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        typeLabel,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: levelColor.withValues(alpha: 0.1),
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: levelColor, width: 1),
-                        ),
-                        child: Text(
-                          result.levelName,
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.bold,
-                            color: levelColor,
-                          ),
-                        ),
-                      ),
-                    ],
+                  Text(
+                    typeLabel,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                   Text(
                     '${result.score}/${result.totalQuestions} correct',

@@ -1,0 +1,516 @@
+✅ SCENARIO 1: Fever & Chills
+🟩 Step 1: Scenario
+
+🇰🇷 아나는 열이 나고 오한이 있습니다.
+🇵🇭 May lagnat si Ana at nilalamig siya.
+🇻🇳 Ana bị sốt và ớn lạnh.
+🇨🇳 安娜发烧并感到发冷。
+🇪🇸 Ana tiene fiebre y escalofríos.
+
+🟨 Step 2: Patient (user) responds to the question: "What brings you in today?"
+
+English
+
+Translations
+
+✅ I have a fever.
+
+🇵🇭 May lagnat ako. / 🇻🇳 Tôi bị sốt. / 🇨🇳 我发烧了。/ 🇪🇸 Tengo fiebre.
+
+❌ I have a toothache.
+
+Masakit ang ngipin ko. / Tôi đau răng. / 我牙疼。 / Me duele una muela.
+
+❌ I am happy.
+
+Masaya ako. / Tôi vui. / 我很开心。 / Estoy feliz.
+
+
+🟦 Step 3: Doctor asks in Korean
+
+언제부터 열이 있었어요? (Since when have you had a fever?)
+
+
+🟨 Step 4: Patient chooses response
+
+English
+
+Translations
+
+✅ Since yesterday.
+
+🇵🇭 Simula kahapon. / 🇻🇳 Từ hôm qua. / 🇨🇳 从昨天开始。/ 🇪🇸 Desde ayer.
+
+❌ I like soup.
+
+Gusto ko ng sabaw. / Tôi thích súp. / 我喜欢汤。/ Me gusta la sopa.
+
+❌ My foot is itchy.
+
+Makati ang paa ko. / Chân tôi bị ngứa. / 我的脚很痒。/ Me pica el pie.
+
+
+✅ SCENARIO 2: Vaccine Appointment
+🟩 Step 1: Scenario
+
+🇰🇷 카일은 예방접종을 받으러 병원에 왔습니다.
+🇵🇭 Pumunta si Kyle sa klinika para magpabakuna.
+🇻🇳 Kyle đến phòng khám để tiêm phòng.
+🇨🇳 凯尔去诊所打疫苗。
+🇪🇸 Kyle fue a la clínica para vacunarse.
+
+🟨 Step 2: Patient answers
+
+English
+
+Translations
+
+✅ I'm here for a vaccine.
+
+🇵🇭 Nandito ako para sa bakuna. / 🇻🇳 Tôi đến để tiêm vắc xin. / 🇨🇳 我是来打疫苗的。/ 🇪🇸 Vine a vacunarme.
+
+❌ I want ice cream.
+
+Gusto ko ng sorbetes. / Tôi muốn kem. / 我想吃冰淇淋。/ Quiero helado.
+
+❌ My shoes are wet.
+
+Basa ang sapatos ko. / Giày tôi bị ướt. / 我的鞋子湿了。/ Mis zapatos están mojados.
+
+
+🟦 Step 3: Doctor asks in Korean
+
+조금 따끔할 거예요. 괜찮으세요? (It will sting a little. Are you okay?)
+
+
+🟨 Step 4: Patient answers
+
+English
+
+Translations
+
+✅ Yes, I’m ready.
+
+🇵🇭 Oo, handa na ako. / 🇻🇳 Vâng, tôi sẵn sàng. / 🇨🇳 是的，我准备好了。/ 🇪🇸 Sí, estoy listo.
+
+❌ No, I want to go home.
+
+Hindi, gusto kong umuwi. / Không, tôi muốn về nhà. / 不，我想回家。/ No, quiero irme a casa.
+
+❌ My mom is cooking.
+
+Nagluluto ang nanay ko. / Mẹ tôi đang nấu ăn. / 我妈妈在做饭。/ Mi mamá está cocinando.
+
+
+✅ SCENARIO 3: Stomachache
+🟩 Step 1: Scenario
+
+🇰🇷 리나는 배가 아파서 병원에 왔습니다.
+🇵🇭 Masakit ang tiyan ni Rina.
+🇻🇳 Rina bị đau bụng.
+🇨🇳 莉娜肚子痛。
+🇪🇸 Rina tiene dolor de estómago.
+
+🟨 Step 2: Patient answers
+
+English
+
+Translations
+
+✅ My stomach hurts.
+
+🇵🇭 Masakit ang tiyan ko. / 🇻🇳 Tôi bị đau bụng. / 🇨🇳 我肚子疼。/ 🇪🇸 Me duele el estómago.
+
+❌ My eyes are blue.
+
+Asul ang mga mata ko. / Mắt tôi màu xanh. / 我有蓝眼睛。/ Tengo ojos azules.
+
+❌ It is snowing.
+
+Umuulan ng niyebe. / Trời đang tuyết. / 下雪了。/ Está nevando.
+
+
+🟦 Step 3: Doctor asks in Korean
+
+무엇을 먹었는지 기억나세요? (Do you remember what you ate?)
+
+
+🟨 Step 4: Patient answers
+
+English
+
+Translations
+
+✅ I ate spicy food.
+
+🇵🇭 Kumain ako ng maanghang. / 🇻🇳 Tôi ăn đồ cay. / 🇨🇳 我吃了辣的食物。/ 🇪🇸 Comí comida picante.
+
+❌ I went swimming.
+
+Lumangoy ako. / Tôi đã bơi. / 我去游泳了。/ Fui a nadar.
+
+❌ I saw a cat.
+
+Nakakita ako ng pusa. / Tôi thấy một con mèo. / 我看到一只猫。/ Vi un gato.
+
+✅ SCENARIO 4: Diarrhea
+🟩 Step 1: Scenario
+
+🇰🇷 미겔은 어제부터 설사를 하고 있습니다.
+🇵🇭 May diarrhea si Miguel simula kahapon.
+🇻🇳 Miguel bị tiêu chảy từ hôm qua.
+🇨🇳 米格尔从昨天开始拉肚子。
+🇪🇸 Miguel tiene diarrea desde ayer.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ I have diarrhea.
+
+🇵🇭 May diarrhea ako. / 🇻🇳 Tôi bị tiêu chảy. / 🇨🇳 我拉肚子了。/ 🇪🇸 Tengo diarrea.
+
+❌ I like bananas.
+
+Gusto ko ng saging. / Tôi thích chuối. / 我喜欢香蕉。/ Me gustan los plátanos.
+
+❌ I want to dance.
+
+Gusto kong sumayaw. / Tôi muốn nhảy. / 我想跳舞。/ Quiero bailar.
+
+
+🟦 Step 3: Doctor asks
+
+언제부터 그랬어요? (Since when has it been happening?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ Since last night.
+
+🇵🇭 Simula kagabi. / 🇻🇳 Từ tối qua. / 🇨🇳 从昨晚开始。/ 🇪🇸 Desde anoche.
+
+❌ I like ice cream.
+
+Gusto ko ng sorbetes. / Tôi thích kem. / 我喜欢冰淇淋。/ Me gusta el helado.
+
+❌ My ears are ringing.
+
+Umiingay ang tenga ko. / Tai tôi đang ù. / 我耳鸣。/ Me zumban los oídos.
+
+
+✅ SCENARIO 5: Insomnia
+🟩 Step 1: Scenario
+
+🇰🇷 사라는 밤에 잠을 잘 수 없습니다.
+🇵🇭 Hindi makatulog si Sara tuwing gabi.
+🇻🇳 Sara không thể ngủ vào ban đêm.
+🇨🇳 萨拉晚上睡不着觉。
+🇪🇸 Sara no puede dormir por las noches.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ I can’t sleep at night.
+
+🇵🇭 Hindi ako makatulog sa gabi. / 🇻🇳 Tôi không ngủ được vào ban đêm. / 🇨🇳 我晚上睡不着。/ 🇪🇸 No puedo dormir por las noches.
+
+❌ I need new shoes.
+
+Kailangan ko ng bagong sapatos. / Tôi cần đôi giày mới. / 我需要新鞋。/ Necesito zapatos nuevos.
+
+❌ My friend is tall.
+
+Matangkad ang kaibigan ko. / Bạn tôi cao. / 我朋友很高。/ Mi amigo es alto.
+
+
+🟦 Step 3: Doctor asks
+
+스트레스를 많이 받으세요? (Are you feeling stressed?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ Yes, I feel stressed.
+
+🇵🇭 Oo, stress ako. / 🇻🇳 Vâng, tôi căng thẳng. / 🇨🇳 是的，我很有压力。/ 🇪🇸 Sí, me siento estresado.
+
+❌ I ate pizza.
+
+Kumain ako ng pizza. / Tôi đã ăn pizza. / 我吃了披萨。/ Comí pizza.
+
+❌ I like music.
+
+Gusto ko ng musika. / Tôi thích âm nhạc. / 我喜欢音乐。/ Me gusta la música.
+
+
+✅ SCENARIO 6: Toothache
+🟩 Step 1: Scenario
+
+🇰🇷 진수는 치통이 있어서 치과에 왔습니다.
+🇵🇭 Masakit ang ngipin ni Jinsoo kaya pumunta siya sa dentista.
+🇻🇳 Jinsoo bị đau răng nên đã đến nha sĩ.
+🇨🇳 珍秀牙疼，所以去了牙医诊所。
+🇪🇸 Jinsoo tiene dolor de muelas y fue al dentista.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ My tooth hurts.
+
+🇵🇭 Masakit ang ngipin ko. / 🇻🇳 Tôi bị đau răng. / 🇨🇳 我牙疼。/ 🇪🇸 Me duele una muela.
+
+❌ I washed my hands.
+
+Naghugas ako ng kamay. / Tôi đã rửa tay. / 我洗了手。/ Me lavé las manos.
+
+❌ It’s raining today.
+
+Umuulan ngayon. / Hôm nay trời mưa. / 今天在下雨。/ Hoy está lloviendo.
+
+
+🟦 Step 3: Doctor asks
+
+얼마나 오래 아팠어요? (How long has it been hurting?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ For three days.
+
+🇵🇭 Tatlong araw na. / 🇻🇳 Ba ngày rồi. / 🇨🇳 三天了。/ 🇪🇸 Desde hace tres días.
+
+❌ I want lunch.
+
+Gusto ko ng tanghalian. / Tôi muốn ăn trưa. / 我想吃午饭。/ Quiero almorzar.
+
+❌ My dog is loud.
+
+Maingay ang aso ko. / Chó tôi ồn ào. / 我家的狗很吵。/ Mi perro es ruidoso.
+
+✅ SCENARIO 7: Itchy Eyes
+🟩 Step 1: Scenario
+
+🇰🇷 엘라는 눈이 가렵다고 말합니다.
+🇵🇭 Makating-makati ang mga mata ni Ella.
+🇻🇳 Mắt của Ella bị ngứa.
+🇨🇳 艾拉觉得眼睛很痒。
+🇪🇸 A Ella le pican los ojos.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ My eyes are itchy.
+
+🇵🇭 Makati ang mga mata ko. / 🇻🇳 Mắt tôi bị ngứa. / 🇨🇳 我眼睛很痒。/ 🇪🇸 Me pican los ojos.
+
+❌ I went running.
+
+Nag-jogging ako. / Tôi đã chạy bộ. / 我去跑步了。/ Fui a correr.
+
+❌ I saw a movie.
+
+Nanood ako ng pelikula. / Tôi đã xem phim. / 我看了一部电影。/ Vi una película.
+
+
+🟦 Step 3: Doctor asks
+
+꽃가루 알레르기가 있나요? (Do you have a pollen allergy?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ Yes, I have pollen allergy.
+
+🇵🇭 Oo, may allergy ako sa pollen. / 🇻🇳 Vâng, tôi bị dị ứng phấn hoa. / 🇨🇳 是的，我对花粉过敏。/ 🇪🇸 Sí, tengo alergia al polen.
+
+❌ I drank coffee.
+
+Uminom ako ng kape. / Tôi đã uống cà phê. / 我喝了咖啡。/ Tomé café.
+
+❌ I like spring.
+
+Gusto ko ang tagsibol. / Tôi thích mùa xuân. / 我喜欢春天。/ Me gusta la primavera.
+
+
+✅ SCENARIO 8: Fatigue
+🟩 Step 1: Scenario
+
+🇰🇷 다니엘은 피곤하고 기운이 없습니다.
+🇵🇭 Pagod at matamlay si Daniel.
+🇻🇳 Daniel cảm thấy mệt mỏi và yếu.
+🇨🇳 丹尼尔感到疲惫和虚弱。
+🇪🇸 Daniel está cansado y sin energía.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ I feel tired.
+
+🇵🇭 Pagod ako. / 🇻🇳 Tôi cảm thấy mệt. / 🇨🇳 我很累。/ 🇪🇸 Estoy cansado.
+
+❌ I have a cat.
+
+May pusa ako. / Tôi có một con mèo. / 我有一只猫。/ Tengo un gato.
+
+❌ I watched TV.
+
+Nanood ako ng TV. / Tôi đã xem TV. / 我看了电视。/ Vi televisión.
+
+
+🟦 Step 3: Doctor asks
+
+수면은 잘 취하고 있나요? (Are you sleeping well?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ No, I sleep late.
+
+🇵🇭 Hindi, late na ako natutulog. / 🇻🇳 Không, tôi ngủ muộn. / 🇨🇳 不，我很晚睡。/ 🇪🇸 No, duermo tarde.
+
+❌ I bought candy.
+
+Bumili ako ng kendi. / Tôi đã mua kẹo. / 我买了糖。/ Compré dulces.
+
+❌ My hands are cold.
+
+Malamig ang mga kamay ko. / Tay tôi lạnh. / 我手很冷。/ Mis manos están frías.
+
+
+✅ SCENARIO 9: Sadness / Emotional Health
+🟩 Step 1: Scenario
+
+🇰🇷 윤호는 감정적으로 매우 슬퍼 보입니다.
+🇵🇭 Mukhang malungkot si Yoonho.
+🇻🇳 Yoonho trông rất buồn.
+🇨🇳 允浩看起来很伤心。
+🇪🇸 Yoonho parece muy triste.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ I feel sad.
+
+🇵🇭 Malungkot ako. / 🇻🇳 Tôi buồn. / 🇨🇳 我很难过。/ 🇪🇸 Estoy triste.
+
+❌ I play video games.
+
+Naglalaro ako ng video game. / Tôi chơi trò chơi điện tử. / 我玩电子游戏。/ Juego videojuegos.
+
+❌ I like blue.
+
+Gusto ko ang kulay asul. / Tôi thích màu xanh. / 我喜欢蓝色。/ Me gusta el azul.
+
+
+🟦 Step 3: Doctor asks
+
+최근에 스트레스를 받는 일이 있었나요? (Have you been stressed recently?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ Yes, at school.
+
+🇵🇭 Oo, sa school. / 🇻🇳 Vâng, ở trường. / 🇨🇳 是的，在学校。/ 🇪🇸 Sí, en la escuela.
+
+❌ My dog barks.
+
+Tumatahol ang aso ko. / Chó của tôi sủa. / 我家的狗在叫。/ Mi perro ladra.
+
+❌ I ate cake.
+
+Kumain ako ng cake. / Tôi đã ăn bánh. / 我吃了蛋糕。/ Comí pastel.
+
+
+✅ SCENARIO 10: Cut Finger
+🟩 Step 1: Scenario
+
+🇰🇷 해리는 손가락을 베였습니다.
+🇵🇭 Naputol ni Harry ang kanyang daliri.
+🇻🇳 Harry bị đứt tay.
+🇨🇳 哈利割伤了手指。
+🇪🇸 Harry se cortó el dedo.
+
+🟨 Step 2: Patient responds
+
+English
+
+Translations
+
+✅ I cut my finger.
+
+🇵🇭 Naputol ko ang daliri ko. / 🇻🇳 Tôi bị đứt tay. / 🇨🇳 我割伤了手指。/ 🇪🇸 Me corté el dedo.
+
+❌ I see a bird.
+
+Nakakita ako ng ibon. / Tôi thấy một con chim. / 我看到一只鸟。/ Veo un pájaro.
+
+❌ I drank milk.
+
+Uminom ako ng gatas. / Tôi đã uống sữa. / 我喝了牛奶。/ Bebí leche.
+
+
+🟦 Step 3: Doctor asks
+
+상처가 깊은가요? (Is the cut deep?)
+
+
+🟨 Step 4: Patient responds
+
+English
+
+Translations
+
+✅ Yes, it’s bleeding.
+
+🇵🇭 Oo, dumudugo ito. / 🇻🇳 Vâng, nó đang chảy máu. / 🇨🇳 是的，它在流血。/ 🇪🇸 Sí, está sangrando.
+
+❌ I love painting.
+
+Mahilig ako sa pagpipinta. / Tôi thích vẽ tranh. / 我喜欢画画。/ Me encanta pintar.
+
+❌ The sun is hot.
+
+Mainit ang araw. / Trời nắng. / 太阳很晒。/ Hace sol.

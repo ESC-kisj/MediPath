@@ -140,7 +140,7 @@ void clearChatMessages() {
 }
 
 // Quiz functionality
-enum QuizType { mcq, typing, matching, mixed, roleplay }
+enum QuizType { mcq, typing, matching, mixed }
 
 class MCQQuestion {
   final String question;
@@ -177,28 +177,6 @@ class MatchingQuestion {
     required this.title,
     required this.pairs,
     required this.explanation,
-  });
-}
-
-class RolePlayQuestion {
-  final String title;
-  final String scenarioText;
-  final String doctorQuestion;
-  final List<String> options;
-  final int correctIndex;
-  final String explanation;
-  final bool isFollowUp;
-  final String? previousAnswer;
-
-  const RolePlayQuestion({
-    required this.title,
-    required this.scenarioText,
-    required this.doctorQuestion,
-    required this.options,
-    required this.correctIndex,
-    required this.explanation,
-    this.isFollowUp = false,
-    this.previousAnswer,
   });
 }
 
@@ -399,7 +377,6 @@ class QuizResult {
   final int score;
   final int totalQuestions;
   final String date; // ISO 8601 string
-  final int level; // 1=Beginner, 2=Intermediate, 3=Advanced
 
   QuizResult({
     required this.quizType,
@@ -407,19 +384,9 @@ class QuizResult {
     required this.score,
     required this.totalQuestions,
     required this.date,
-    this.level = 1,
   });
 
   double get percentage => totalQuestions > 0 ? (score / totalQuestions) * 100 : 0;
-
-  String get levelName {
-    switch (level) {
-      case 1: return 'Beginner';
-      case 2: return 'Intermediate';
-      case 3: return 'Advanced';
-      default: return 'Beginner';
-    }
-  }
 
   Map<String, dynamic> toJson() => {
     'quizType': quizType,
@@ -427,7 +394,6 @@ class QuizResult {
     'score': score,
     'totalQuestions': totalQuestions,
     'date': date,
-    'level': level,
   };
 
   factory QuizResult.fromJson(Map<String, dynamic> json) => QuizResult(
@@ -436,7 +402,6 @@ class QuizResult {
     score: json['score'],
     totalQuestions: json['totalQuestions'],
     date: json['date'],
-    level: json['level'] ?? 1,
   );
 }
 

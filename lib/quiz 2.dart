@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'globals.dart' as globals;
 import 'quiz_generator.dart';
-import 'api_service.dart' show CategoryHelper;
+import 'api_service.dart';
 
 class QuizPage extends StatefulWidget {
   const QuizPage({super.key});
@@ -13,7 +13,6 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   globals.QuizType? selectedQuizType;
   String? selectedCategory = 'ALL'; // Default to all categories
-  int selectedDifficulty = 1; // 1=Beginner, 2=Intermediate, 3=Advanced
   bool quizStarted = false;
   int currentQuestionIndex = 0;
   int score = 0;
@@ -68,12 +67,11 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     _progressAnimationController.forward();
 
     try {
-      // Generate quiz using local vocabulary data
+      // Generate quiz using backend API with selected category
       List<dynamic> generatedQuiz = await QuizGenerator.generateQuiz(
         type,
         questionCount: totalQuestions,
         selectedCategory: selectedCategory,
-        difficulty: selectedDifficulty,
       );
 
       setState(() {
@@ -89,7 +87,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     } catch (e) {
       print('Error generating quiz: $e');
       _showErrorDialog(
-        'Failed to load quiz questions. Please try again.',
+        'Failed to load quiz questions. Please check your internet connection and try again.',
       );
     }
   }
@@ -123,8 +121,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
               setState(() {
                 quizStarted = false;
                 selectedQuizType = null;
-                selectedCategory = 'ALL';
-                selectedDifficulty = 1;
+                selectedCategory = 'ALL'; // Reset category selection
               });
             },
             child: const Text('OK'),
@@ -135,14 +132,13 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   }
 
   void _showResultDialog() {
-    // Save quiz result to history (persisted on device via SharedPreferences)
+    // Save quiz result to history
     globals.addQuizResult(globals.QuizResult(
       quizType: selectedQuizType?.name ?? 'unknown',
       category: selectedCategory ?? 'ALL',
       score: score,
       totalQuestions: totalQuestions,
       date: DateTime.now().toIso8601String(),
-      level: selectedDifficulty,
     ));
 
     showDialog(
@@ -178,8 +174,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
               setState(() {
                 quizStarted = false;
                 selectedQuizType = null;
-                selectedCategory = 'ALL';
-                selectedDifficulty = 1;
+                selectedCategory = 'ALL'; // Reset category selection
               });
             },
             child: const Text('Try Again'),
@@ -190,8 +185,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
               setState(() {
                 quizStarted = false;
                 selectedQuizType = null;
-                selectedCategory = 'ALL';
-                selectedDifficulty = 1;
+                selectedCategory = 'ALL'; // Reset category selection
               });
             },
             child: const Text('Done'),
@@ -273,42 +267,6 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
               ),
             ),
 
-            const SizedBox(height: 16),
-
-            // Difficulty Selection Section
-            Card(
-              elevation: 2,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Select Difficulty',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    _buildDifficultySelector(),
-                    const SizedBox(height: 8),
-                    Text(
-                      _getDifficultyDescription(selectedDifficulty),
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.grey[600],
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
             const SizedBox(height: 30),
             _buildQuizTypeCard(
               'Multiple Choice',
@@ -332,14 +290,6 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
               Icons.swap_horiz,
               Colors.orange,
               () => startQuiz(globals.QuizType.matching),
-            ),
-            const SizedBox(height: 16),
-            _buildQuizTypeCard(
-              'Role Play',
-              'Practice doctor-patient conversations',
-              Icons.record_voice_over,
-              Colors.teal,
-              () => startQuiz(globals.QuizType.roleplay),
             ),
             const SizedBox(height: 16),
             _buildQuizTypeCard(
@@ -393,65 +343,6 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
         },
       ),
     );
-  }
-
-  Widget _buildDifficultySelector() {
-    return Row(
-      children: [
-        _buildDifficultyChip(1, 'Beginner', Colors.green),
-        const SizedBox(width: 8),
-        _buildDifficultyChip(2, 'Intermediate', Colors.orange),
-        const SizedBox(width: 8),
-        _buildDifficultyChip(3, 'Advanced', Colors.red),
-      ],
-    );
-  }
-
-  Widget _buildDifficultyChip(int level, String label, Color color) {
-    bool isSelected = selectedDifficulty == level;
-    return Expanded(
-      child: GestureDetector(
-        onTap: () {
-          setState(() {
-            selectedDifficulty = level;
-          });
-        },
-        child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 12),
-          decoration: BoxDecoration(
-            color: isSelected ? color.withValues(alpha: 0.2) : Colors.grey[100],
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(
-              color: isSelected ? color : Colors.grey[300]!,
-              width: isSelected ? 2 : 1,
-            ),
-          ),
-          child: Center(
-            child: Text(
-              label,
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                color: isSelected ? color : Colors.grey[600],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  String _getDifficultyDescription(int difficulty) {
-    switch (difficulty) {
-      case 1:
-        return 'Basic vocabulary only. Questions go Korean \u2192 your language.';
-      case 2:
-        return 'Basic + advanced vocabulary. Bidirectional questions.';
-      case 3:
-        return 'All vocabulary + medical scenario questions.';
-      default:
-        return '';
-    }
   }
 
   Widget _buildQuizTypeCard(
@@ -569,7 +460,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
             ),
             SizedBox(height: 8),
             Text(
-              'Please wait while we prepare your quiz.',
+              'Please wait while we fetch medical vocabulary from the database.',
               style: TextStyle(fontSize: 14, color: Colors.grey),
               textAlign: TextAlign.center,
             ),
@@ -590,8 +481,6 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       return _buildTypingQuestion(question);
     } else if (question is globals.MatchingQuestion) {
       return _buildMatchingQuestion(question);
-    } else if (question is globals.RolePlayQuestion) {
-      return _buildRolePlayQuestion(question);
     }
 
     return const Center(child: Text('Invalid question type'));
@@ -655,25 +544,6 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
           _feedbackAnimationController.reset();
         });
       },
-      onNext: nextQuestion,
-    );
-  }
-
-  Widget _buildRolePlayQuestion(globals.RolePlayQuestion question) {
-    return RolePlayWidget(
-      key: ValueKey(currentQuestionIndex),
-      question: question,
-      onAnswerSelected: (isCorrect) {
-        setState(() {
-          questionAnswered = true;
-          showAnswer = true;
-          if (isCorrect) score++;
-        });
-        _feedbackAnimationController.forward().then((_) {
-          _feedbackAnimationController.reset();
-        });
-      },
-      showAnswer: showAnswer,
       onNext: nextQuestion,
     );
   }
@@ -916,21 +786,15 @@ class _TypingWidgetState extends State<TypingWidget> {
   @override
   void initState() {
     super.initState();
-    _controller.addListener(_onTextChanged);
-  }
-
-  void _onTextChanged() {
-    final hasText = _controller.text.trim().isNotEmpty;
-    if (hasText != _hasText) {
+    _controller.addListener(() {
       setState(() {
-        _hasText = hasText;
+        _hasText = _controller.text.trim().isNotEmpty;
       });
-    }
+    });
   }
 
   @override
   void dispose() {
-    _controller.removeListener(_onTextChanged);
     _controller.dispose();
     super.dispose();
   }
@@ -993,8 +857,6 @@ class _TypingWidgetState extends State<TypingWidget> {
                   TextField(
                     controller: _controller,
                     enabled: !widget.showAnswer,
-                    autocorrect: false,
-                    enableSuggestions: false,
                     decoration: InputDecoration(
                       hintText: 'Type your answer here...',
                       border: OutlineInputBorder(
@@ -1524,365 +1386,6 @@ class _MatchingWidgetState extends State<MatchingWidget>
           ),
         ],
       ],
-    );
-  }
-}
-
-// Role Play Widget — conversational doctor-patient quiz
-class RolePlayWidget extends StatefulWidget {
-  final globals.RolePlayQuestion question;
-  final Function(bool) onAnswerSelected;
-  final bool showAnswer;
-  final VoidCallback onNext;
-
-  const RolePlayWidget({
-    super.key,
-    required this.question,
-    required this.onAnswerSelected,
-    required this.showAnswer,
-    required this.onNext,
-  });
-
-  @override
-  State<RolePlayWidget> createState() => _RolePlayWidgetState();
-}
-
-class _RolePlayWidgetState extends State<RolePlayWidget>
-    with TickerProviderStateMixin {
-  int? selectedIndex;
-  late AnimationController _animationController;
-  late Animation<double> _scaleAnimation;
-
-  @override
-  void initState() {
-    super.initState();
-    _animationController = AnimationController(
-      duration: const Duration(milliseconds: 200),
-      vsync: this,
-    );
-    _scaleAnimation = Tween<double>(begin: 1.0, end: 0.95).animate(
-      CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
-    );
-  }
-
-  @override
-  void dispose() {
-    _animationController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Scenario card
-          Card(
-            elevation: 3,
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-            child: Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                gradient: LinearGradient(
-                  colors: [Colors.teal.shade50, Colors.teal.shade100],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Icon(Icons.local_hospital,
-                          color: Colors.teal[700], size: 20),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          widget.question.title,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.teal[700],
-                          ),
-                        ),
-                      ),
-                      if (widget.question.isFollowUp)
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 8, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: Colors.teal[700],
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: const Text(
-                            'Follow-up',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    widget.question.scenarioText,
-                    style: const TextStyle(fontSize: 15, height: 1.4),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 12),
-
-          // Previous answer context (for follow-up questions)
-          if (widget.question.isFollowUp &&
-              widget.question.previousAnswer != null) ...[
-            Align(
-              alignment: Alignment.centerRight,
-              child: Container(
-                constraints: BoxConstraints(
-                  maxWidth: MediaQuery.of(context).size.width * 0.7,
-                ),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [Colors.blue[400]!, Colors.blue[600]!],
-                  ),
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                    bottomLeft: Radius.circular(16),
-                    bottomRight: Radius.circular(4),
-                  ),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.person, color: Colors.white, size: 16),
-                    const SizedBox(width: 6),
-                    Flexible(
-                      child: Text(
-                        widget.question.previousAnswer!,
-                        style:
-                            const TextStyle(color: Colors.white, fontSize: 14),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 12),
-          ],
-
-          // Doctor question bubble
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              constraints: BoxConstraints(
-                maxWidth: MediaQuery.of(context).size.width * 0.8,
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-              decoration: BoxDecoration(
-                color: Colors.grey[100],
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(4),
-                  topRight: Radius.circular(16),
-                  bottomLeft: Radius.circular(16),
-                  bottomRight: Radius.circular(16),
-                ),
-                border: Border.all(color: Colors.grey[300]!),
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(6),
-                    decoration: BoxDecoration(
-                      color: Colors.teal[100],
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Icon(Icons.medical_services,
-                        color: Colors.teal[700], size: 18),
-                  ),
-                  const SizedBox(width: 10),
-                  Flexible(
-                    child: Text(
-                      widget.question.doctorQuestion,
-                      style: const TextStyle(fontSize: 15, height: 1.4),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-
-          // Instruction
-          Text(
-            'Choose your response:',
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w600,
-              color: Colors.grey[700],
-            ),
-          ),
-          const SizedBox(height: 10),
-
-          // Option buttons
-          ...List.generate(widget.question.options.length, (index) {
-            Color? backgroundColor;
-            Color? textColor;
-            IconData? icon;
-
-            if (widget.showAnswer) {
-              if (index == widget.question.correctIndex) {
-                backgroundColor = Colors.green[100];
-                textColor = Colors.green[800];
-                icon = Icons.check_circle;
-              } else if (index == selectedIndex &&
-                  index != widget.question.correctIndex) {
-                backgroundColor = Colors.red[100];
-                textColor = Colors.red[800];
-                icon = Icons.cancel;
-              }
-            }
-
-            return AnimatedBuilder(
-              animation: _scaleAnimation,
-              builder: (context, child) {
-                return Transform.scale(
-                  scale:
-                      selectedIndex == index ? _scaleAnimation.value : 1.0,
-                  child: Container(
-                    margin: const EdgeInsets.only(bottom: 10),
-                    child: Card(
-                      elevation: selectedIndex == index ? 4 : 2,
-                      color: backgroundColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        side: selectedIndex == index && !widget.showAnswer
-                            ? const BorderSide(color: Colors.teal, width: 2)
-                            : BorderSide.none,
-                      ),
-                      child: InkWell(
-                        borderRadius: BorderRadius.circular(12),
-                        onTap: widget.showAnswer
-                            ? null
-                            : () {
-                                setState(() {
-                                  selectedIndex = index;
-                                });
-                                _animationController.forward().then((_) {
-                                  _animationController.reverse();
-                                });
-                                widget.onAnswerSelected(
-                                  index == widget.question.correctIndex,
-                                );
-                              },
-                        child: Padding(
-                          padding: const EdgeInsets.all(14),
-                          child: Row(
-                            children: [
-                              Container(
-                                width: 28,
-                                height: 28,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: selectedIndex == index
-                                      ? Colors.teal
-                                      : Colors.grey[300],
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    String.fromCharCode(65 + index),
-                                    style: TextStyle(
-                                      color: selectedIndex == index
-                                          ? Colors.white
-                                          : Colors.grey[600],
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Text(
-                                  widget.question.options[index],
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    color: textColor ?? Colors.black87,
-                                    fontWeight: selectedIndex == index
-                                        ? FontWeight.w600
-                                        : FontWeight.normal,
-                                  ),
-                                ),
-                              ),
-                              if (icon != null)
-                                Icon(icon, color: textColor, size: 22),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                );
-              },
-            );
-          }),
-
-          // Feedback and Next button
-          if (widget.showAnswer) ...[
-            Card(
-              color: Colors.blue[50],
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12)),
-              child: Padding(
-                padding: const EdgeInsets.all(14),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Icon(Icons.info, color: Colors.blue[700], size: 20),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        widget.question.explanation,
-                        style: TextStyle(color: Colors.blue[700], fontSize: 14),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 14),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: widget.onNext,
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.all(16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-                child: const Text(
-                  'Next Question',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                ),
-              ),
-            ),
-          ],
-        ],
-      ),
     );
   }
 }

@@ -1,0 +1,459 @@
+🇵🇭 Tagalog Version
+Kategorya 1: Mga Bahagi ng Katawan (Body Parts)
+Ulo – Ang tuktok na bahagi ng katawan na may utak, mga mata, ilong, at bibig
+Buhok – Mga hibla na tumutubo sa ulo
+Mukha – Harap ng ulo kung saan naroon ang mga mata, ilong, at bibig
+Mata – Bahagi ng katawan para makakita
+Tainga – Bahagi ng katawan para makarinig
+Ilong – Bahagi para maka-amoy at huminga
+Bibig – Bahagi para kumain at magsalita
+Ngipin – Matitigas na bahagi sa bibig para ngumuyâ
+Leeg – Nagdurugtong sa ulo at katawan
+Balikat – Itaas na bahagi kung saan nakakabit ang braso
+Braso – Bahagi mula balikat hanggang kamay
+Siko – Kasukasuan sa gitna ng braso
+Kamay – Bahaging may mga daliri na panghawak
+Daliri – Maliit na bahagi sa kamay para humawak at humipo
+Dibdib – Harap na itaas na bahagi ng katawan malapit sa puso at baga
+Tiyan – Bahagi kung saan napupunta ang pagkain pagkatapos kumain
+Likod – Likurang itaas na bahagi ng katawan
+Binti – Bahaging ginagamit sa paglakad
+Tuhod – Kasukasuan sa gitna ng binti
+Paa – Bahaging tinutuntungan kapag nakatayo
+Daliri sa paa – Maliit na bahagi sa dulo ng paa
+Lalamunan – Loob ng leeg na gamit sa paglunok at pagsasalita
+Kategorya 2: Mga Sakit at Sintomas (Illnesses & Symptoms)
+Lagnat – Mataas na temperatura ng katawan
+Ubo – Biglang tunog mula sa lalamunan kapag may sakit
+Masakit na lalamunan – Pangangati o kirot sa lalamunan
+Sipon – Likidong lumalabas sa ilong
+Baradong ilong – Hirap huminga sa ilong
+Sakit ng ulo – Pananakit ng ulo
+Sakit ng tiyan – Pananakit ng tiyan
+Pagduduwal – Pakiramdam na gusto mong sumuka
+Pagsusuka – Paglabas ng pagkain mula sa tiyan sa bibig
+Pagtatae – Madalas at malabnaw na pagdumi
+Pantal – Pulang pantal na makati sa balat
+Nahihilo – Pakiramdam na umiikot ang paligid
+Matinding pagod – Sobrang pagkapuyat o panghihina
+Panginginig – Nilalamig kahit mainit ang panahon
+Impeksiyon – Kapag mikrobyo ang nagpasakit sa katawan
+Sakit – Masakit na pakiramdam sa anumang bahagi
+Paso – Pinsalang dulot ng init o apoy
+Pasa – Asul/pula-violet na marka dahil sa tama
+Pamamaga – Paglaki ng bahagi ng katawan
+Pagdurugo – Paglabas ng dugo mula sa katawan
+Baling buto – Nabiyak o nabali ang buto
+Sakit ng ngipin – Pananakit sa ngipin o gilagid
+Sakit ng tainga – Pananakit sa loob ng tainga
+Makati – Pakiramdam na gusto mong kamutin
+Pulikat – Matalim na kirot sa kalamnan
+Pagtitibi – Hirap o madalang na pagdumi
+Alerhiya – Reaksiyon sa pagkain, alikabok, hayop, atbp.
+Hirap sa paghinga – Hirap huminga nang normal
+Kategorya 3: Kalinisán at Kaligtasan (Hygiene & Safety)
+Maghugas ng kamay – Linisin ang kamay gamit ang sabon at tubig
+Mag-sanitize – Gumamit ng alkohol o gel pamatay mikrobyo
+Maskara – Panakip sa mukha para hindi kumalat ang mikrobyo
+Bakuna – Turok na pumipigil sa sakit
+Benda – Pantakip sa sugat
+Malinis – Walang dumi
+Marumi – Hindi malinis
+Mikrobyo – Napakaliit na nilalang na nagdudulot ng sakit
+Sabon – Panghugas ng kamay o katawan
+Unang lunas – Agarang tulong kapag nasugatan
+Ligtas – Walang panganib
+Delikado – May panganib
+Matumba – Biglang pagkahulog sa lupa
+Madulas – Pagdulas dahil sa basâ o makinis na sahig
+Matapon – Pagbuhos o pagkalat ng likido
+Kategorya 4: Nutrisyon at Pagkain (Nutrition & Food)
+Tubig – Malinaw na iniinom
+Gatas – Puting inumin mula sa baka
+Dyus – Inumin mula sa prutas o gulay
+Prutas – Matamis na pagkain gaya ng mansanas o saging
+Gulay – Malusog na pagkain gaya ng karot o broccoli
+Tinapay – Tinustang pagkain mula sa harina
+Kanin – Nilutong puti o kayumangging bigas
+Karne – Pagkain mula sa baka, baboy, manok, atbp.
+Asukal – Putî o kayumangging pampatamis
+Asin – Puting pampalasa sa pagkain
+Meryenda – Maliit na pagkain sa pagitan ng mga pagkain
+Pagkain – Almusal, tanghalian, o hapunan
+Kategorya 5: Damdamin/ Pakiramdam (Emotions/Feelings)
+Masaya – Mabuti at magaan ang pakiramdam
+Malungkot – Masama o mabigat ang pakiramdam
+Pagod – Nais magpahinga o matulog
+Kabado – Balisa o ninenerbiyos
+Galit – Nagagalit o naiirita
+Natatakot – Nininervyos o takót
+Kalma – Relaks at maayos ang pakiramdam
+May sakit – Hindi maganda ang pakiramdam
+Ayos – Hindi masama, hindi rin masyadong maganda
+Nasaktan – May kirot o pinsala
+Kategorya 6: Mga Tagubilin ng Doktor (Doctor’s Instructions)
+Inumin ang gamot na ito – Uminom o gamitin ang gamot
+Dalawang beses sa isang araw – Gawin ito dalawang ulit kada araw
+Bago kumain – Gawin bago kumain
+Pagkatapos kumain – Gawin matapos kumain
+Huwag kainin ito – Bawal kainin
+Uminom ng maraming tubig – Uminom ng maraming baso ng tubig
+Magpahinga – Matulog o humiga para mag-recharge
+Pumunta sa ospital – Bisitahin ang doktor o ER
+Bumalik sa susunod na linggo – Mag-follow-up makalipas ang 7 araw
+Sukatin ang temperatura – Gamitin ang termometro
+Sundin ang mga tagubilin – Gawin ang sinabi ng doktor
+Huwag hawakan ang sugat – Iwasang galawin ang sugat
+Iwasan ang maalat na pagkain – Huwag masyadong maalat
+Sukatin ang presyon ng dugo – I-monitor ang blood pressure
+Ipahid ang krema – Ilagay ang gamot sa balat
+Takpan ang bibig – Takpan kapag umuubo
+Manatili sa bahay – Huwag lumabas
+Magsuot ng mask – Gumamit ng maskara
+Huminga nang malalim – Dahan-dahang huminga
+Huwag mag-alala – Lahat ay magiging maayos
+
+🇻🇳 Vietnamese Version
+Danh mục 1: Bộ phận Cơ thể (Body Parts)
+Đầu – Phần trên cùng của cơ thể có não, mắt, mũi và miệng
+Tóc – Những sợi mọc trên đầu
+Mặt – Phần trước của đầu có mắt, mũi, miệng
+Mắt – Bộ phận để nhìn
+Tai – Bộ phận để nghe
+Mũi – Bộ phận để ngửi và thở
+Miệng – Nơi ăn uống và nói chuyện
+Răng – Phần cứng trong miệng để nhai
+Cổ – Nối đầu với cơ thể
+Vai – Phần cao nơi cánh tay gắn vào thân
+Cánh tay – Phần từ vai đến bàn tay
+Khuỷu tay – Khớp gập ở giữa cánh tay
+Bàn tay – Phần có ngón để cầm nắm
+Ngón tay – Phần nhỏ trên bàn tay để chạm và giữ
+Ngực – Phần trước trên của cơ thể chứa tim và phổi
+Bụng – Nơi thức ăn đến sau khi ăn
+Lưng – Phần sau trên của cơ thể
+Chân – Phần để đi bộ
+Đầu gối – Khớp gập ở giữa chân
+Bàn chân – Phần đứng lên khi ta đứng
+Ngón chân – Phần nhỏ ở đầu bàn chân
+Họng – Ống trong cổ giúp nuốt và nói
+Danh mục 2: Bệnh & Triệu chứng (Illnesses & Symptoms)
+Sốt – Nhiệt độ cơ thể cao
+Ho – Âm thanh bật ra từ họng khi bị bệnh
+Đau họng – Cảm giác đau rát trong họng
+Chảy mũi – Nước mũi chảy ra
+Nghẹt mũi – Khó thở bằng mũi
+Đau đầu – Cảm giác đau ở đầu
+Đau bụng – Cảm giác đau ở bụng
+Buồn nôn – Cảm giác muốn nôn
+Nôn mửa – Thức ăn trào ra từ dạ dày qua miệng
+Tiêu chảy – Đi ngoài lỏng và thường xuyên
+Phát ban – Vết đỏ ngứa trên da
+Chóng mặt – Cảm giác quay cuồng
+Mệt mỏi – Rất mệt và thiếu năng lượng
+Ớn lạnh – Cảm thấy lạnh dù trời ấm
+Nhiễm trùng – Vi khuẩn/vi rút làm cơ thể bị bệnh
+Đau – Cảm giác đau ở bất cứ nơi nào
+Bỏng – Vết thương do nóng hoặc lửa
+Bầm tím – Vết xanh tím trên da do va chạm
+Sưng – Bộ phận cơ thể to lên bất thường
+Chảy máu – Máu chảy ra ngoài cơ thể
+Gãy xương – Xương bị nứt hoặc gãy
+Đau răng – Đau ở răng hoặc nướu
+Đau tai – Đau bên trong tai
+Ngứa – Cảm giác muốn gãi
+Chuột rút – Đau nhói ở cơ bắp
+Táo bón – Khó hoặc ít đi ngoài
+Dị ứng – Phản ứng với thức ăn, bụi, v.v.
+Khó thở – Thở không dễ dàng
+Danh mục 3: Vệ sinh & An toàn (Hygiene & Safety)
+Rửa tay – Làm sạch tay bằng xà phòng và nước
+Khử trùng – Dùng gel/cồn để diệt vi trùng
+Khẩu trang – Che mặt để ngăn vi rút lây lan
+Vắc-xin – Mũi tiêm phòng bệnh
+Băng gạc – Che vết thương
+Sạch – Không bẩn
+Bẩn – Không sạch
+Vi trùng – Sinh vật nhỏ gây bệnh
+Xà phòng – Dùng rửa tay hoặc cơ thể
+Sơ cứu – Cứu giúp nhanh khi bị thương
+An toàn – Không nguy hiểm
+Nguy hiểm – Có nguy cơ gây hại
+Ngã – Rơi xuống đất bất ngờ
+Trượt – Ngã vì mặt sàn trơn
+Đổ tràn – Chất lỏng văng ra ngoài
+Danh mục 4: Dinh dưỡng & Thực phẩm (Nutrition & Food)
+Nước – Chất lỏng trong suốt để uống
+Sữa – Chất lỏng màu trắng từ bò
+Nước ép – Đồ uống từ trái cây hoặc rau
+Trái cây – Thức ăn ngọt như táo, chuối
+Rau – Thức ăn tốt cho sức khỏe như cà rốt
+Bánh mì – Thực phẩm nướng từ bột mì
+Cơm – Gạo đã nấu chín
+Thịt – Thức ăn từ bò, gà, heo …
+Đường – Hạt trắng/brown tạo vị ngọt
+Muối – Hạt trắng tạo vị mặn
+Bữa ăn nhẹ – Thức ăn nhỏ giữa các bữa
+Bữa ăn – Bữa sáng, trưa hoặc tối
+Danh mục 5: Cảm xúc (Emotions/Feelings)
+Vui – Cảm thấy tốt, hạnh phúc
+Buồn – Cảm thấy không vui
+Mệt – Muốn nghỉ hoặc ngủ
+Lo lắng – Thấy sợ hoặc căng thẳng
+Giận – Cảm thấy bực tức
+Sợ hãi – Cảm thấy lo sợ
+Bình tĩnh – Thư giãn, không lo lắng
+Ốm – Không khỏe
+Ổn – Bình thường, không vấn đề lớn
+Đau – Bị thương hoặc đau đớn
+Danh mục 6: Chỉ dẫn của Bác sĩ (Doctor’s Instructions)
+Uống thuốc này – Dùng hoặc bôi thuốc
+Hai lần mỗi ngày – Làm 2 lần một ngày
+Trước bữa ăn – Dùng trước khi ăn
+Sau bữa ăn – Dùng sau khi ăn
+Không ăn món này – Tránh món này
+Uống nhiều nước – Uống nhiều cốc nước
+Nghỉ ngơi – Ngủ hoặc thư giãn
+Đến bệnh viện – Đi khám hoặc cấp cứu
+Quay lại tuần sau – Tái khám sau 7 ngày
+Đo nhiệt độ – Dùng nhiệt kế
+Làm theo hướng dẫn – Tuân thủ bác sĩ
+Đừng chạm vết thương – Tránh sờ vào
+Hạn chế muối – Ăn ít mặn
+Đo huyết áp – Kiểm tra huyết áp
+Bôi kem – Thoa thuốc lên da
+Che miệng – Che khi ho
+Ở nhà – Không ra ngoài
+Đeo khẩu trang – Đeo mask
+Thở sâu – Hít thở chậm, sâu
+Đừng lo – Mọi việc sẽ ổn
+
+🇨🇳 Chinese (简体) Version
+类别 1：身体部位 (Body Parts)
+头 – 大脑、眼睛、鼻子、嘴巴所在的身体顶部
+头发 – 长在头上的细丝
+脸 – 头部前面，有眼睛、鼻子、嘴巴
+眼睛 – 用来看的器官
+耳朵 – 用来听的器官
+鼻子 – 用来闻味和呼吸的器官
+嘴 – 用来吃东西和说话
+牙齿 – 口腔里咬碎食物的硬组织
+脖子 – 连接头和身体的部分
+肩膀 – 手臂连接身体的上方
+手臂 – 从肩到手的部分
+肘 – 手臂中间的关节
+手 – 有手指，用来抓握
+手指 – 手上的小部分，用来摸和拿
+胸 – 上身前面，心脏和肺所在
+肚子 – 吃东西后食物进入的地方
+背 – 上身后面
+腿 – 用来走路的部分
+膝盖 – 腿中间的关节
+脚 – 站立时着地的部分
+脚趾 – 脚尖的小部分
+喉咙 – 颈内管道，帮助吞咽和说话
+类别 2：疾病与症状 (Illnesses & Symptoms)
+发烧 – 体温升高
+咳嗽 – 喉咙突然发出的声音
+喉咙痛 – 喉咙疼或发痒
+流鼻涕 – 鼻子流出液体
+鼻塞 – 鼻子堵住难以呼吸
+头痛 – 头部疼痛
+胃痛 – 肚子疼
+恶心 – 想吐的感觉
+呕吐 – 把胃里的食物吐出来
+腹泻 – 排便次数多且稀
+皮疹 – 皮肤上红痒的斑点
+眩晕 – 感觉天旋地转
+疲劳 – 非常累
+发冷 – 感觉冷，即使环境不冷
+感染 – 细菌或病毒引起的生病
+疼痛 – 身体任何部位的痛感
+烫伤 – 热或火造成的皮肤损伤
+淤青 – 受伤后皮肤呈蓝紫色
+肿胀 – 身体某处变大
+出血 – 血液流出体外
+骨折 – 骨头断裂或裂开
+牙痛 – 牙或牙龈疼
+耳痛 – 耳内疼痛
+痒 – 想抓挠的感觉
+抽筋 – 肌肉突然刺痛
+便秘 – 排便困难或次数少
+过敏 – 对食物、灰尘等产生反应
+呼吸困难 – 呼吸不顺畅
+类别 3：卫生与安全 (Hygiene & Safety)
+洗手 – 用肥皂水清洁双手
+消毒 – 用酒精凝胶杀菌
+口罩 – 戴在脸上防止传播病菌
+疫苗 – 预防疾病的注射
+绷带 – 覆盖伤口的布条
+干净 – 没有脏东西
+脏 – 不干净
+细菌 – 让人生病的微生物
+肥皂 – 洗手或洗澡用的清洁品
+急救 – 受伤时的快速帮助
+安全 – 没有危险
+危险 – 可能造成伤害
+跌倒 – 突然倒在地上
+滑倒 – 地面滑导致跌倒
+洒出 – 液体溢出容器
+类别 4：营养与食物 (Nutrition & Food)
+水 – 透明的饮用液体
+牛奶 – 牛产出的白色液体
+果汁 – 水果或蔬菜做的饮料
+水果 – 甜的食物，如苹果、香蕉
+蔬菜 – 健康的食物，如胡萝卜、花椰菜
+面包 – 面粉烘焙的食物
+米饭 – 煮熟的白色或棕色米
+肉 – 牛、鸡、猪等动物肉
+糖 – 白色或棕色的甜晶体
+盐 – 给食物调味的白色晶体
+零食 – 正餐之间的小吃
+餐 – 早餐、午餐或晚餐
+🔹 类别 5：情绪/感觉 (Emotions/Feelings)
+开心 – 感觉好，想笑
+难过 – 心情不好
+疲倦 – 想休息或睡觉
+紧张 – 担心或害怕
+生气 – 感到愤怒
+害怕 – 感到恐惧
+平静 – 放松，没有担忧
+生病 – 感觉不舒服
+还好 – 不好也不坏
+受伤 – 有痛或伤口
+类别 6：医生指示 (Doctor’s Instructions)
+服用此药 – 吃或使用这药
+一天两次 – 每天两次
+饭前服用 – 吃饭前用
+饭后服用 – 吃饭后用
+不要吃这个 – 禁止食用
+多喝水 – 喝很多水
+休息 – 睡觉或放松
+去医院 – 去看医生或急诊
+下周复诊 – 七天后回来
+量体温 – 用体温计测温
+遵医嘱 – 按医生说的做
+别碰伤口 – 不要摸伤口
+少盐饮食 – 减少盐摄入
+测血压 – 量血压
+涂药膏 – 把药膏涂在皮肤上
+捂住嘴 – 咳嗽时捂住
+待在家 – 不要外出
+戴口罩 – 佩戴口罩
+深呼吸 – 慢慢深吸气
+别担心 – 一切都会好
+
+🇪🇸 Spanish Version
+Categoría 1: Partes del cuerpo (Body Parts)
+Cabeza – Parte superior del cuerpo con cerebro, ojos, nariz y boca
+Cabello – Hebras que crecen en la cabeza
+Cara – Parte frontal de la cabeza con ojos, nariz y boca
+Ojo – Órgano que permite ver
+Oreja – Órgano que permite oír
+Nariz – Órgano para oler y respirar
+Boca – Parte que se usa para comer y hablar
+Dientes – Partes duras en la boca para masticar
+Cuello – Une la cabeza al cuerpo
+Hombro – Parte superior donde se une el brazo
+Brazo – Parte del hombro hasta la mano
+Codo – Articulación en medio del brazo
+Mano – Parte con dedos para agarrar
+Dedo – Parte pequeña en la mano para tocar y sostener
+Pecho – Parte frontal superior con corazón y pulmones
+Estómago – Lugar donde va la comida tras comer
+Espalda – Parte trasera superior del cuerpo
+Pierna – Parte usada para caminar
+Rodilla – Articulación en medio de la pierna
+Pie – Parte sobre la que se apoya al estar de pie
+Dedo del pie – Parte pequeña al final del pie
+Garganta – Tubo en el cuello que ayuda a tragar y hablar
+Categoría 2: Enfermedades y síntomas (Illnesses & Symptoms)
+Fiebre – Temperatura corporal alta
+Tos – Sonido repentino del cuello al estar enfermo
+Dolor de garganta – Picor o dolor en la garganta
+Nariz moqueante – Líquido que sale de la nariz
+Nariz tapada – Difícil respirar por la nariz
+Dolor de cabeza – Dolor en la cabeza
+Dolor de estómago – Dolor en el vientre
+Náuseas – Sensación de querer vomitar
+Vómitos – Expulsar comida del estómago por la boca
+Diarrea – Ir al baño muchas veces con heces líquidas
+Sarpullido – Manchas rojas y picor en la piel
+Mareos – Sensación de que todo gira
+Fatiga – Estar muy cansado
+Escalofríos – Sentir frío aunque haga calor
+Infección – Cuando gérmenes enferman el cuerpo
+Dolor – Sensación de daño en cualquier parte
+Quemadura – Daño en la piel por calor o fuego
+Moretón – Mancha azul o morada por golpe
+Hinchazón – Parte del cuerpo más grande de lo normal
+Sangrado – La sangre sale del cuerpo
+Hueso roto – Hueso rajado o partido
+Dolor de dientes – Dolor en dientes o encías
+Dolor de oído – Dolor dentro del oído
+Picor – Ganas de rascar la piel
+Calambre – Dolor agudo en un músculo
+Estreñimiento – Dificultad o poca frecuencia al evacuar
+Alergia – Reacción a comida, polvo, animales, etc.
+Falta de aire – Dificultad para respirar normalmente
+Categoría 3: Higiene y seguridad (Hygiene & Safety)
+Lavar las manos – Limpiar manos con agua y jabón
+Desinfectar – Usar gel/alcohol para matar gérmenes
+Mascarilla – Cubre rostro para evitar contagios
+Vacuna – Inyección que previene enfermedades
+Vendaje – Cubre una herida
+Limpio – Sin suciedad
+Sucio – No limpio
+Gérmenes – Microorganismos que causan enfermedades
+Jabón – Producto para lavar manos o cuerpo
+Primeros auxilios – Ayuda rápida al lesionado
+Seguro – Sin peligro
+Peligroso – Con riesgo
+Caída – Caer al suelo de repente
+Resbalón – Caer por piso resbaladizo
+Derrame – Líquido que se sale del recipiente
+Categoría 4: Nutrición y alimentos (Nutrition & Food)
+Agua – Líquido transparente para beber
+Leche – Líquido blanco de vaca
+Jugo – Bebida de frutas o verduras
+Fruta – Alimento dulce como manzana o plátano
+Verdura – Alimento sano como zanahoria o brócoli
+Pan – Alimento horneado de harina
+Arroz – Granos cocidos blancos o integrales
+Carne – Alimento de vaca, pollo, cerdo, etc.
+Azúcar – Cristales blancos o marrones dulces
+Sal – Cristales blancos para sazonar
+Aperitivo – Pequeña comida entre horas
+Comida – Desayuno, almuerzo o cena
+Categoría 5: Emociones/ Sentimientos (Emotions/Feelings)
+Feliz – Sentirse bien, contento
+Triste – Sentirse mal o desanimado
+Cansado – Desear descansar o dormir
+Nervioso – Preocupado o con miedo
+Enfadado – Sentirse molesto
+Asustado – Sentir temor
+Calmado – Relajado, sin preocupación
+Enfermo – No sentirse bien
+Bien – Ni mal ni excelente
+Dolorido – Con dolor o lesión
+Categoría 6: Indicaciones del médico (Doctor’s Instructions)
+Tome este medicamento – Ingerir o usar la medicina
+Dos veces al día – Hacerlo dos veces diarias
+Antes de comer – Tomar antes de las comidas
+Después de comer – Tomar tras las comidas
+No coma esto – Evitar este alimento
+Beba mucha agua – Tomar varios vasos de agua
+Descanse – Dormir o relajarse
+Vaya al hospital – Visitar al médico o urgencias
+Vuelva la próxima semana – Regresar en siete días
+Tómese la temperatura – Usar termómetro
+Siga las instrucciones – Hacer lo que diga el médico
+No toque la herida – Evitar tocar la zona
+Evite la sal excesiva – Comer menos sal
+Revise su presión arterial – Medir la presión
+Use la crema – Aplicar el ungüento en la piel
+Cúbrase la boca – Tapar al toser
+Quédese en casa – No salir afuera
+Use mascarilla – Llevar cubrebocas
+Respire profundo – Inhalar y exhalar lentamente
+No se preocupe – Todo estará bien

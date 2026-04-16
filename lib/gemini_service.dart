@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class GeminiService {
-  static const String _model = 'gemini-3.1-flash-lite-preview';
+  static const String _model = 'gemini-2.0-flash';
   static String? _apiKey;
 
   static Future<void> initialize() async {
@@ -32,48 +32,65 @@ DOCTOR: 스트레스가 두통의 원인일 수 있습니다. 충분한 휴식�
     final url =
         'https://generativelanguage.googleapis.com/v1beta/models/$_model:generateContent?key=$_apiKey';
 
-    try {
-      final response = await http.post(
-        Uri.parse(url),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'system_instruction': {
-            'parts': [
-              {'text': _systemPrompt}
-            ]
-          },
-          'contents': [
-            {
-              'role': 'user',
-              'parts': [
-                {'text': userMessage}
-              ]
-            }
-          ],
-          'generationConfig': {
-            'maxOutputTokens': 1024,
-            'temperature': 0.7,
-          },
-        }),
-      );
-
-      if (response.statusCode == 200) {
-        final data = jsonDecode(response.body);
-        final candidates = data['candidates'] as List?;
-        if (candidates != null && candidates.isNotEmpty) {
-          final parts = candidates[0]['content']['parts'] as List?;
-          if (parts != null && parts.isNotEmpty) {
-            return parts[0]['text'].toString().trim();
-          }
+    final body = jsonEncode({
+      'system_instruction': {
+        'parts': [
+          {'text': _systemPrompt}
+        ]
+      },
+      'contents': [
+        {
+          'role': 'user',
+          'parts': [
+            {'text': userMessage}
+          ]
         }
-        return "Sorry, I didn't get a response. Please try again.";
-      } else {
-        print('Gemini API Error: ${response.statusCode} - ${response.body}');
-        return "Sorry, I'm having trouble connecting to the AI service right now. Please try again later.";
+      ],
+      'generationConfig': {
+        'maxOutputTokens': 1024,
+        'temperature': 0.7,
+      },
+    });
+
+    // Retry up to 3 times for transient server errors (503, 429)
+    const maxRetries = 3;
+    for (int attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        final response = await http.post(
+          Uri.parse(url),
+          headers: {'Content-Type': 'application/json'},
+          body: body,
+        );
+
+        if (response.statusCode == 200) {
+          final data = jsonDecode(response.body);
+          final candidates = data['candidates'] as List?;
+          if (candidates != null && candidates.isNotEmpty) {
+            final parts = candidates[0]['content']['parts'] as List?;
+            if (parts != null && parts.isNotEmpty) {
+              return parts[0]['text'].toString().trim();
+            }
+          }
+          return "Sorry, I didn't get a response. Please try again.";
+        } else if ((response.statusCode == 503 || response.statusCode == 429) &&
+            attempt < maxRetries - 1) {
+          // Wait before retrying: 1s, 2s
+          await Future.delayed(Duration(seconds: attempt + 1));
+          continue;
+        } else {
+          print('Gemini API Error: ${response.statusCode} - ${response.body}');
+          return "Sorry, I'm having trouble connecting to the AI service right now. Please try again later.";
+        }
+      } catch (e) {
+        if (attempt < maxRetries - 1) {
+          await Future.delayed(Duration(seconds: attempt + 1));
+          continue;
+        }
+        print('Gemini Service Error: $e');
+        return "Sorry, there was an error processing your message. Please try again.";
       }
-    } catch (e) {
-      print('Gemini Service Error: $e');
-      return "Sorry, there was an error processing your message. Please try again.";
     }
+
+    return "Sorry, the AI service is temporarily unavailable. Please try again in a moment.";
   }
 }
